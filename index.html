@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/images/logo.svg" alt="" />
+      <div class="header__body">
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                >Features<img src="/images/icon-arrow-down.svg" alt=""
+              /></a>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="/images/icon-todo.svg" alt="" />Todo List</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/images/icon-calendar.svg" alt="" />Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/images/icon-reminders.svg" alt="" />Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/images/icon-planning.svg" alt="" />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >Company<img src="/images/icon-arrow-down.svg" alt=""
+              /></a>
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+      <a href="#"><img src="/images/icon-menu.svg" alt="" /></a>
+    </header>
+    <main>
+      <section class="hero">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/image-hero-mobile.png"
+          />
+          <img src="/images/image-hero-mobile.png" alt="" />
+        </picture>
+        <div class="hero__body">
+          <div class="hero__content">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="hero__clients">
+            <ul>
+              <li><img src="/images/client-databiz.svg" alt="" /></li>
+              <li><img src="/images/client-audiophile.svg" alt="" /></li>
+              <li><img src="/images/client-meet.svg" alt="" /></li>
+              <li><img src="/images/client-maker.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
