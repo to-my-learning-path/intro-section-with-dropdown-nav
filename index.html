@@ -17,14 +17,34 @@
   <body>
     <header>
       <img class="logo" src="/images/logo.svg" alt="" />
-      <div class="header__body">
-        <nav>
-          <ul>
-            <li>
-              <a href="#"
+      <button
+        class="toggle-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-wrapper"
+        aria-label="Toggle navigation"
+      >
+        <img class="icon-menu" src="/images/icon-menu.svg" alt="" />
+        <img class="icon-close-menu" src="/images/icon-close-menu.svg" alt="" />
+      </button>
+      <div class="header__body" id="nav-wrapper" data-visible="false">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a
+                id="feature__toggle-button"
+                aria-expanded="false"
+                aria-controls="feature__menu"
+                aria-label="Toggle Sub Navigation"
+                class="nav__list-link"
+                href="#"
                 >Features<img src="/images/icon-arrow-down.svg" alt=""
               /></a>
-              <ul>
+              <ul
+                class="nav__sub-list"
+                data-visible="false"
+                id="feature__sub-menu"
+              >
                 <li>
                   <a href="#"
                     ><img src="/images/icon-todo.svg" alt="" />Todo List</a
@@ -47,26 +67,39 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="#"
+            <li class="nav__list-item">
+              <a
+                id="company__toggle-button"
+                aria-expanded="false"
+                aria-controls="company__menu"
+                aria-label="Toggle Sub Navigation"
+                class="nav__list-link"
+                href="#"
                 >Company<img src="/images/icon-arrow-down.svg" alt=""
               /></a>
-              <ul>
+              <ul
+                class="nav__sub-list"
+                data-visible="false"
+                id="company__sub-menu"
+              >
                 <li><a href="#">History</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
+            <li class="nav__list-item"><a href="#">Careers</a></li>
+            <li class="nav__list-item"><a href="#">About</a></li>
           </ul>
+          <div class="nav__profile">
+            <a class="login" href="#">Login</a>
+            <a class="register" href="#">Register</a>
+          </div>
         </nav>
-        <div>
-          <a href="#">Login</a>
-          <a href="#">Register</a>
-        </div>
       </div>
-      <a href="#"><img src="/images/icon-menu.svg" alt="" /></a>
+
+      <!-- <a class="nav__toggle-button" href="#" aria-expanded="false"
+        ><img src="/images/icon-menu.svg" alt=""
+      /></a> -->
     </header>
     <main>
       <section class="hero">
@@ -97,5 +130,6 @@
         </div>
       </section>
     </main>
+    <script src="/main.js"></script>
   </body>
 </html>
