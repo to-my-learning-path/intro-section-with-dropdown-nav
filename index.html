@@ -11,12 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="/images/logo.svg" alt="" />
+      <img aria-hidden="true" class="logo" src="./images/logo.svg" alt="" />
       <button
         class="toggle-button"
         type="button"
@@ -24,8 +24,18 @@
         aria-controls="nav-wrapper"
         aria-label="Toggle navigation"
       >
-        <img class="icon-menu" src="/images/icon-menu.svg" alt="" />
-        <img class="icon-close-menu" src="/images/icon-close-menu.svg" alt="" />
+        <img
+          aria-hidden="true"
+          class="icon-menu"
+          src="./images/icon-menu.svg"
+          alt=""
+        />
+        <img
+          aria-hidden="true"
+          class="icon-close-menu"
+          src="./images/icon-close-menu.svg"
+          alt=""
+        />
       </button>
       <div class="header__body" id="nav-wrapper" data-visible="false">
         <nav class="nav">
@@ -38,7 +48,10 @@
                 aria-label="Toggle Sub Navigation"
                 class="nav__list-link"
                 href="#"
-                >Features<img src="/images/icon-arrow-down.svg" alt=""
+                >Features<img
+                  aria-hidden="true"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
               /></a>
               <ul
                 class="nav__sub-list"
@@ -46,23 +59,39 @@
                 id="feature__sub-menu"
               >
                 <li>
-                  <a href="#"
-                    ><img src="/images/icon-todo.svg" alt="" />Todo List</a
+                  <a href="#" aria-label="Todo List"
+                    ><img
+                      aria-hidden="true"
+                      src="./images/icon-todo.svg"
+                      alt=""
+                    />Todo List</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><img src="/images/icon-calendar.svg" alt="" />Calendar</a
+                  <a href="#" aria-label="Calendar"
+                    ><img
+                      aria-hidden="true"
+                      src="./images/icon-calendar.svg"
+                      alt=""
+                    />Calendar</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><img src="/images/icon-reminders.svg" alt="" />Reminders</a
+                  <a href="#" aria-label="Reminders"
+                    ><img
+                      aria-hidden="true"
+                      src="./images/icon-reminders.svg"
+                      alt=""
+                    />Reminders</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><img src="/images/icon-planning.svg" alt="" />Planning</a
+                  <a href="#" aria-label="Planning"
+                    ><img
+                      aria-hidden="true"
+                      src="./images/icon-planning.svg"
+                      alt=""
+                    />Planning</a
                   >
                 </li>
               </ul>
@@ -72,27 +101,33 @@
                 id="company__toggle-button"
                 aria-expanded="false"
                 aria-controls="company__menu"
-                aria-label="Toggle Sub Navigation"
+                aria-label="Toggle Company Sub Navigation"
                 class="nav__list-link"
-                href="#"
-                >Company<img src="/images/icon-arrow-down.svg" alt=""
+                >Company<img
+                  aria-hidden="true"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
               /></a>
               <ul
                 class="nav__sub-list"
                 data-visible="false"
                 id="company__sub-menu"
               >
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#" aria-label="History">History</a></li>
+                <li><a href="#" aria-label="Our Team">Our Team</a></li>
+                <li><a href="#" aria-label="Blog">Blog</a></li>
               </ul>
             </li>
-            <li class="nav__list-item"><a href="#">Careers</a></li>
-            <li class="nav__list-item"><a href="#">About</a></li>
+            <li class="nav__list-item">
+              <a href="#" aria-label="Careers">Careers</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" aria-label="About">About</a>
+            </li>
           </ul>
           <div class="nav__profile">
-            <a class="login" href="#">Login</a>
-            <a class="register" href="#">Register</a>
+            <a class="login" href="#" aria-label="Login">Login</a>
+            <a class="register" href="#" aria-label="Register">Register</a>
           </div>
         </nav>
       </div>
@@ -102,9 +137,9 @@
         <picture>
           <source
             media="(min-width: 769px)"
-            srcset="/images/image-hero-desktop.png"
+            srcset="./images/image-hero-desktop.png"
           />
-          <img src="/images/image-hero-mobile.png" alt="" />
+          <img aria-hidden="true" src="./images/image-hero-mobile.png" alt="" />
         </picture>
         <div class="hero__body">
           <div class="hero__content">
@@ -113,19 +148,39 @@
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#" aria-label="Learn More">Learn more</a>
           </div>
           <div class="hero__clients">
             <ul>
-              <li><img src="/images/client-databiz.svg" alt="" /></li>
-              <li><img src="/images/client-audiophile.svg" alt="" /></li>
-              <li><img src="/images/client-meet.svg" alt="" /></li>
-              <li><img src="/images/client-maker.svg" alt="" /></li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  src="./images/client-databiz.svg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  src="./images/client-audiophile.svg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img aria-hidden="true" src="./images/client-meet.svg" alt="" />
+              </li>
+              <li>
+                <img
+                  aria-hidden="true"
+                  src="./images/client-maker.svg"
+                  alt=""
+                />
+              </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
